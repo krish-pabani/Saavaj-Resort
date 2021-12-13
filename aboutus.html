@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+	<style type="text/css">
+		html{
+			width: 100%,
+			font-family: Barlow Condensed;
+			background-color: #C6B270;
+			padding: 0px;
+			margin:0px;
+		}
+		.cardwrap{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+
+		}
+		.card{
+			position: relative;
+			background-color: black;
+			width: 75%;
+			height: 400px;
+			padding-top: 40px; 
+			padding-bottom: 40px;
+			border:2px solid white;
+			font-family: Roboto Condensed;
+		}
+		.card:hover{
+			transform: scale(1.03);
+			box-shadow: 0px 0px 30px white;
+			border-color: #C6B270;
+		}
+		.spanheading{
+			height: 50px;
+			font-size: 34px;
+			color: black;
+			font-family : Barlow Condensed;
+			background-color: white;
+			text-align: center;
+			padding:5px 0px 0px;
+			margin: 0px;
+		}
+
+		.col1{
+			padding-top: 0px;
+			float: left;
+			width: 37%;
+			height: 100%;
+			margin-left: 45px;
+			font-size: 20px;
+
+
+		}
+		.col1 p{
+			margin-top: 20px;
+			margin-left: 25px;
+			width: 90%;
+			color: white;
+			text-align: justify;
+			letter-spacing: 2.5px;
+			font-size: 21px;
+
+		}
+		.spanheading:hover{
+			color:white;
+			background-color: #E8D8A2;
+		}
+		.col2{
+			/*float: left;*/
+			margin-left: 25px;
+			
+		}
+		footer{
+			background-color: white;
+			width: 100%;
+			height: 400px;
+		}
+		header{
+	/*position: fixed;
+	border:2px solid black;
+	background-color: black;
+	height: 75px;
+	width: auto;
+	padding-right: 300px;
+	padding-left: 300px;*/
+}
+
+
+
+.button{
+background-color: #E8D8A2;
+   color: black;
+   border:3px solid black;
+   vertical-align: center;
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: bold;
+   height: 30px;
+   font-family: Barlow Condensed;
+   width: auto;
+   padding: 0px 10px;
+   position: fixed;
+   transform: translate(1390px ,-130px);
+   
+
+}
+.button:hover{
+background-color: black;
+color: white;
+}
+
+.bbutton { 
+	font-size: 32px;
+	background-color: black;
+	padding: 5px 10px;
+	position: absolute;
+	top: 25px;
+	right: 100px;
+	border:2px solid  black;
+	text-decoration: none;color: #C6B270;
+	z-index: 100;
+
+}
+
+
+
+.bbutton:hover{
+	background-color: #C6B270;
+	border:2px solid black;
+	color: black;
+	box-shadow: 0px 0px 15px;
+	
+}
+
+.bbutton:active{
+	transform: scale(0.9);
+	box-shadow: none;
+}
+
+
+
+header .container{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: white;
+}
+
+.nav{
+	font-family: Roboto Condensed;
+	position: fixed;
+	color: black;
+	width: 100%;
+	top:0;
+	left:0;
+	height: 83px;
+	z-index: 99;
+	padding:20px 15px 5px; 
+    display: none;
+    background: transparent;
+    transform: translateX(300px);
+}
+
+header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+}
+
+header .nav ul li{
+display: inline-block;
+border:3px solid black;
+font-size: 32px;
+background-color: #E8D8A2;
+border-radius: 50px;
+padding: 0px 10px 0px; 
+margin: 0px 3px;
+}
+
+header .nav ul li a{
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 400;
+    color:black;
+    display: block;
+    position: relative;
+    padding:10px 10px;
+}
+header .nav ul li:hover{
+	box-shadow: 0px 0px 10px black;
+	border-color: white;
+	transition-duration:0.2s; 
+	transform: scale(1.1);
+
+}
+
+
+header .ham-burger{
+	transform: translateX(10px);
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+	padding: 5px 0px;
+	
+}
+.headwrap{
+	
+height: 100px;
+}
+
+
+
+
+footer{
+	background-color: white;
+	width: 100%;
+	height: 325px;
+	margin-top: 20px;
+	
+}
+
+.f1{
+	display: flex;flex-direction: row; flex-wrap: wrap;justify-content: center; padding-top: 20px;
+}
+
+
+
+.f13{
+	padding-right: 10px; padding-left: 10px;
+}
+
+	</style>
+</head>
+<body>
+	<header class="headwrap">
+		<div class="container">
+	 	 	<div class="ham-burger"><a href="javascript:void(0)" >
+		 	 <!--    <span></span>
+		        <span></span>
+		        <span></span> -->
+		        <img src="01.png" style="height: 95px;width: 255px;">
+	 	 	</a></div>
+	 	 	<div class="nav">
+	 	 		<ul>
+	 	 			<li><a href="WT-Project.html">Home</a></li>
+	 	 			<li><a href="aboutus.html">About Us</a></li>
+	 	 			<li><a href="rooms.html">Rooms</a></li>
+	 	 			<li><a href="our story.html">Our Story</a></li>
+	 	 			<li><a href="experience.html">Experience</a></li>
+	 	 			<li><a href="m&e.html">Meetings & Events</a></li>
+	 	 			<li><a href="contactus.html">Contact Us</a></li>
+	 	 		</ul>
+	 	 	</div>
+	 	 	<!-- <div class="logo">
+	 	 		 <a href="contactus.html" class="bbutton"> BOOK NOW </a>
+	 	 	</div> -->
+ 		</div>
+
+	</header>
+			
+	<br>
+<div class="cardwrap">
+	<div class="card" >
+		<div class="col1">
+			<div class="spanheading">Pillerless Banquet</div>
+			<p> Saavaj Resort has undoubtedly the most
+		sought after banquet for Wedding functions in and around the region. It is
+		the only pillarless banquet hall with such a huge capacity. Saavaj team also
+		lets you rent the whole resort to make your wedding functions a grand
+		occasion. The resort  has hosted several destination weddings from all
+		across India. We have provisions to manage all wedding functions at the
+		resort. </p>
+		</div> 
+		<div class="col2">
+			<img src="DSC_1173.jpg" width="650px" height="400px">
+		</div>
+	</div>
+	<br>
+	<div class="card">
+		<div class="col1">
+			<div class="spanheading">Cultural Performance</div>
+			<p>Saavaj Resort arranges different cultural performances for its guest without any extra charges. The regional African people, who are said to have migrated to India on orders of the prince of Junagadh still reside in Sasan Gir area and showcase their cultural dance performances in the resort. It is a great way for entertainment in evenings where guests can enjoy and interact with local people at the amphitheatre available at the resort.</p>
+		</div> 
+		<div class="col2">
+			<img src="saavaj-resort_dhamal dance.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+	<br>
+	<div class="card">
+		<div class="col1">
+			<div class="spanheading">Pure Water Pool</div>
+			<p> Saavaj Resort has undoubtedly the most sought after banquet for Wedding functions in and around the region. It is the only pillarless banquet hall with such a huge capacity. Saavaj team also lets you rent the whole resort to make your wedding functions a grand occasion. The resort has hosted several destination weddings from all across India. We have provisions to manage all wedding functions at the resort.</p>
+		</div> 
+		<div class="col2">
+			<img src="SWIMING POOL.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+	<br><div class="card">
+		<div class="col1">
+			<div class="spanheading">Free Stays for Girls</div>	
+			<p> As a humanitarian policy, Saavaj Resort does not charge anything for every girl child staying at the property. The idea of offering free stays to all the girls below 18 years, is a step towards eliminating the taboo associated with daughters. Saavaj resort wants to encourage families to celebrate the daughters and see them as a point of pride.</p>
+		</div> 
+		<div class="col2">
+			<img src="Girls.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+
+	<br><div class="card">
+		<div class="col1">
+			<div class="spanheading">Conference Hall</div>	
+			<p>Saavaj Resort is an ideal destination for conferences and team-building activities for organizations. The conference hall can accommodate 500-700 attendees in different seating arrangements. The pillarless structure, located in a serene surrounding makes it the most sought after venue for MICE. Saavaj Resort has organized meetings and events from in and around Gujarat, Madhya Pradesh, Rajasthan and Maharashtra.</p>
+		</div> 
+		<div class="col2">
+			<img src="792A9309.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+	<br><div class="card">
+		<div class="col1">
+			<div class="spanheading">Regional Food</div>	
+			<p>Saavaj Resort has the most delicious local food served in the whole Sasan Gir region. Guests have always appreciated the food quality and the standard is maintained till today. Along with great food, the experience is enhanced by the exquisite ambiance of the restaurant. The warm staff encourages diners to visit the kitchen area since hygiene is always their first priority.</p>
+		</div> 
+		<div class="col2">
+			<img src="Restaurant 1.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+	<br><div class="card">
+		<div class="col1">
+			<div class="spanheading">Mango Orchard</div>	
+			<p>Saavaj Resorts offers a experiential retreat package including acres of widespread Mango orchards. The guests are welcome to immerse in 'fruit-picking' activity during harvesting time and we recommend spending some time amidst the mango trees to reconnect with lost practices. At Saavaj, you can experience the joy of tasting sweet fruits, hand-picked by yourself.</p>
+		</div> 
+		<div class="col2">
+			<img src="IMG_20191118_153731_edited.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+	<br><div class="card" >
+		<div class="col1">
+			<div class="spanheading">In the Lap of Nature</div>	
+			<p>Saavaj Resort is located at the beautiful intersection of a water body and fruit orchards. Guests can see the beautiful check-dam, sunset, old railway track and fruit orchards all from the resort itself. It is the only resort that provides so many unique experiences to its guests in the entire region. During monsoon, the water stream flows near the resort- making it a beautiful scenery along with the serene sound of water.</p>
+		</div> 
+		<div class="col2">
+			<img src="792A9227.jpg" width="650px" height="400px" >
+		</div>
+	</div>
+</div>
+	
+	<footer>
+		
+			<div class="f1">
+				<div><img src="facebook.png" style="height: 50px;width: 50px; padding: 5px;position: relative;"></div>
+				<div><img src="tripadvisor.jpg" style="height: 50px;width: 80px; padding: 5px;position: relative;"></div>
+				<div><img src="Instagram.png" style="height: 50px;width: 50px; padding: 5px;position: relative;"></div>
+			</div>
+			<div class="f1">
+				<div style="font-size: 20px;"><img src="Asset 6.png" style="height: 25px;width: 25px; margin-right: 6px; transform: translate(0px, 0px); position: relative;">+91 87589 90480</div>
+				<div style="padding-left: 40px; font-size: 20px;"><img src="Asset 8.png" style="height: 25px;width: 32px; margin-right: 7.5px;position: relative;">sky@gmail.com</div>
+			</div>
+			<div class="f1">
+				<div class="f13"><a href="" style="color:black; text-decoration: none;  font-size: 20px;">Contact Us &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Terms & Conditions &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Reservation Policy &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Privacy policy</a></div>
+			</div>
+			<div class="f1">
+				<img src="tac.jpg" style="height: 125px; width: 125px; padding: 0px; margin: 0px; position: relative;">
+			</div>
+			
+		
+	</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</script>
+<script>
+	$(document).ready(function(){
+      $(".ham-burger").click(function(){
+        $(".nav").slideToggle("slow");
+      }); 
+});
+</script>
+</body>
+</html>

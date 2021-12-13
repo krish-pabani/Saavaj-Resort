@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meetings & Events</title>
+<link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<style type="text/css">
+* {box-sizing: border-box}
+.mySlides {
+  display: none
+
+}
+img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body{
+background-color: #C6B270;
+font-family: Barlow Condensed;
+padding: 0px;
+margin:0px;
+}
+#mainDiv{
+	position: relative;
+background-color: white;
+width: 80%;
+height: auto;
+
+padding-top: 25px;
+padding-bottom: 50px;
+}
+.card1{
+width: auto;
+height: auto;
+      display: inline-block;
+      /*border:2px solid orange;*/
+      margin-top: 25px;
+      margin-left: 0px; 
+}
+.imageBox1{
+float: left;
+margin-top: 0px;
+margin-left: 0px;
+padding-right: 0px;
+filter: grayscale(100%);
+}
+
+.imageBox1:hover{
+filter: grayscale(0%);
+}
+
+.imageBox2{
+  float: left;
+  margin-top: 0px;
+margin-left: 00px;
+padding-left: 0px;
+filter: grayscale(100%);
+}
+
+.imageBox2:hover{
+filter: grayscale(0%);
+}
+.content1{
+background-color: black;
+float: left;
+width: 460px;
+height: 480px;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+font-size: 24px;
+font-family: Barlow Condensed;
+
+}
+.content2{ 
+  float: left;
+background-color: black;
+width: 460px;
+height: 480px;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+font-size: 24px;
+font-family: Barlow Condensed;
+}
+.button{
+background-color: white;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+margin-top: 40px;
+padding: 10px;
+font-size: 30px;
+font-family: Roboto Condensed;
+box-shadow: 0px 0px 20px #E8D8A2;
+border-radius: 5px;
+}
+.call{
+  display: inline-block;
+  /*border:2px solid red;*/
+background-color: black;   
+color: white;
+text-align: center;
+text-decoration: none;
+padding: 30px 45px;
+font-size: 25px;
+margin-top: 50px;
+font-family: Roboto Condensed;
+}
+.call:hover{
+background-color: #E8D8A2;
+color: black;
+}
+
+p{
+word-spacing: 5px;
+letter-spacing: 2px;
+padding-top: 15px;
+padding-bottom: 40px;
+color: #E8D8A2;
+padding-left: 35px;
+padding-right: 35px;
+text-align: justify;
+}
+header{
+  /*position: fixed;*/
+/*  border:2px solid black;
+*/  background-color: white;
+  height: 200px;
+  width: auto;
+  padding-right: 300px;
+  padding-left: 300px;
+  margin-bottom: 20px;
+}
+
+
+.buttonb{
+background-color: #E8D8A2;
+   color: black;
+   border:3px solid black;
+   vertical-align: center;
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: bold;
+   height: 15px;
+   width: auto;
+   padding: 0px 10px;
+   position: relative;
+   top: 142px;
+   font-family: Roboto Condensed;
+   left: 1049px;
+}
+.buttonb:hover{
+background-color: black;
+color: white;
+}
+
+.bbutton { 
+	font-size: 32px;
+	background-color: black;
+	padding: 5px 10px;
+	position: absolute;
+	top: 25px;
+	right: 100px;
+	border:2px solid  black;
+	text-decoration: none;color: #C6B270;
+	z-index: 100;
+
+}
+
+
+
+.bbutton:hover{
+	background-color: #C6B270;
+	border:2px solid black;
+	color: black;
+	box-shadow: 0px 0px 15px;
+	
+}
+
+.bbutton:active{
+	transform: scale(0.9);
+	box-shadow: none;
+}
+
+
+
+header .container{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: white;
+}
+
+.nav{
+	font-family: Roboto Condensed;
+	position: fixed;
+	color: black;
+	width: 100%;
+	top:0;
+	left:0;
+	height: 83px;
+	z-index: 99;
+	padding:20px 25px 15px; 
+    display: none;
+    background: transparent;
+    transform: translateX(300px);
+}
+
+header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+}
+
+header .nav ul li{
+display: inline-block;
+border:3px solid black;
+font-size: 32px;
+background-color: #E8D8A2;
+border-radius: 50px;
+padding: 0px 10px 0px; 
+margin: 0px 3px;
+}
+
+header .nav ul li a{
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 400;
+    color:black;
+    display: block;
+    position: relative;
+    padding:10px 10px;
+}
+header .nav ul li:hover{
+	box-shadow: 0px 0px 10px black;
+	border-color: white;
+	transition-duration:0.2s; 
+	transform: scale(1.1);
+
+}
+
+
+header .ham-burger{
+	transform: translateX(10px);
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+	padding: 5px 0px;
+	
+}
+.headwrap{
+	
+height: 100px;
+}
+
+
+footer{
+	background-color: white;
+	width: 100%;
+	height: 325px;
+	margin-top: 20px;
+	
+}
+
+.f1{
+	display: flex;flex-direction: row; flex-wrap: wrap;justify-content: center; padding-top: 20px;
+}
+
+
+
+.f13{
+	padding-right: 10px; padding-left: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<header class="headwrap">
+		<div class="container">
+	 	 	<div class="ham-burger"><a href="javascript:void(0)" >
+		 	 <!--    <span></span>
+		        <span></span>
+		        <span></span> -->
+		        <img src="01.png" style="height: 95px;width: 255px;">
+	 	 	</a></div>
+	 	 	<div class="nav">
+	 	 		<ul>
+	 	 			<li><a href="WT-Project.html">Home</a></li>
+	 	 			<li><a href="aboutus.html">About Us</a></li>
+	 	 			<li><a href="rooms.html">Rooms</a></li>
+	 	 			<li><a href="our story.html">Our Story</a></li>
+	 	 			<li><a href="experience.html">Experience</a></li>
+	 	 			<li><a href="m&e.html">Meetings & Events</a></li>
+	 	 			<li><a href="contactus.html">Contact Us</a></li>
+	 	 		</ul>
+	 	 	</div>
+ 		</div>
+
+	</header>
+
+<!-- SLider Code -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="792A9318.jpg" style="width:100%;height: 700px">
+</div>
+
+<div class="mySlides fade">
+  <img src="DSC_1173.jpg" style="width:100%;height: 700px">
+</div>
+
+<div class="mySlides fade">
+  <img src="792A9309.jpg" style="width:100%;height: 700px">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<!-- Main Content -->
+<center>
+<div id="mainDiv">
+<div class="card1">
+<center>
+<div class="imageBox1">
+<img src="DSC_1173.jpg" width="680px" height="480px" style=""><br>
+</div>
+<div class="content1">
+  <a href="" class="button"> 
+          Weddings
+        </a>
+<p>
+Saavaj Resort has the only pillar less banquet hall with such a large capacity. The banquet can accommodate 500-700 attendees in the sound-proof hall. Located amidst pure nature and getaway destination, Saavaj is the most sought-after banquet for destination weddings.
+</p>
+</div>
+</center>
+</div>
+
+<div class="card1">
+  <center>
+<div class="content2" style="">
+  <a href="" class="button"> 
+          Conferences
+        </a>
+<p style="padding: 10px 20px">
+Saavaj Resort has the best hall available in the region for conferences, meetings and other corporate events. Enjoy a serene nature amidst the jungle on your next corporate event or team-building meeting. The resort has successfully organized events for big and small group. It is also growing to be a preferred corporate offsite destination in and around Gujarat.
+</p>
+</div>
+<div class="imageBox2">
+<img src="792A9309.jpg" width="680px" height="480px" style=""><br>
+
+</div>
+</center>
+</div>
+
+
+
+<div class="card1">
+<center>
+<div class="imageBox1">
+<img src="792A9318.jpg" width="680px" height="480px" style=""><br>
+</div>
+<div class="content1">
+  <a href="" class="button"> 
+          Event Planning
+        </a>
+<p>
+Saavaj Resort has a team specialized in event planning whether it is a wedding, function or corporate event. The team is adept to handle any MICE event and has organized events for Police Department, IRCTC and other Government meetings, among many other events.
+</p>
+</div>
+</center>
+</div>
+
+
+<div><a href="" class="call">
+Call Us Now
+</a></div>
+
+
+</div>
+</center>
+
+<footer>
+		
+			<div class="f1">
+				<div><img src="facebook.png" style="height: 50px;width: 50px; padding: 5px;position: relative;"></div>
+				<div><img src="tripadvisor.jpg" style="height: 50px;width: 80px; padding: 5px;position: relative;"></div>
+				<div><img src="Instagram.png" style="height: 50px;width: 50px; padding: 5px;position: relative;"></div>
+			</div>
+			<div class="f1">
+				<div style="font-size: 20px;"><img src="Asset 6.png" style="height: 25px;width: 25px; margin-right: 6px; transform: translate(0px, 0px); position: relative;">+91 87589 90480</div>
+				<div style="padding-left: 40px; font-size: 20px;"><img src="Asset 8.png" style="height: 25px;width: 32px; margin-right: 7.5px;position: relative;">sky@gmail.com</div>
+			</div>
+			<div class="f1">
+				<div class="f13"><a href="" style="color:black; text-decoration: none;  font-size: 20px;">Contact Us &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Terms & Conditions &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Reservation Policy &nbsp&nbsp |</a></div>
+				<div class="f13"><a href="" style="color:black; text-decoration: none; font-size: 20px;">Privacy policy</a></div>
+			</div>
+			<div class="f1">
+				<img src="tac.jpg" style="height: 125px; width: 125px; padding: 0px; margin: 0px; position: relative;">
+			</div>
+			
+		
+	</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</script>
+<script>
+	$(document).ready(function(){
+      $(".ham-burger").click(function(){
+        $(".nav").slideToggle("slow");
+      }); 
+});
+</script>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
